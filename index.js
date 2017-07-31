@@ -1,8 +1,9 @@
 const express = require('express');
+var os = require("os");
 const app = express();
 
 app.get('/', function(req, res) {
-  res.send('Hello, Monotype!');
+  res.send('Hello, Monotype! at '+os.hostname());
 });
 
 app.get('/hello/:name', function(req, res) {

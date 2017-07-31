@@ -11,6 +11,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "express": "4.15.3"
+    "express": "4.15.3",
+    "os": "^0.1.1"
   }
 }
