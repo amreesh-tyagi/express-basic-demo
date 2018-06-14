@@ -3,11 +3,15 @@ var os = require("os");
 const app = express();
 
 app.get('/', function(req, res) {
-  res.send('Hello, Monotype! at '+os.hostname());
+  res.send('Hello, Welcome to demo app! at '+os.hostname());
+});
+
+app.get('/hello', function(req, res) {
+  res.send('Hello, Welcome to demo app! at '+os.hostname());
 });
 
 app.get('/hello/:name', function(req, res) {
-  res.send('Hello, ' + req.params.name);
+  res.send('Hello, ' + req.params.name + ' Welcome to demo app! at '+os.hostname());
 });
 
 app.listen(5000, function () {
